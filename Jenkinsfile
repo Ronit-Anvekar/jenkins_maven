@@ -19,9 +19,10 @@ pipeline {
                 bat '''
                 docker stop %CONTAINER_NAME% || echo Container not running
                 docker rm %CONTAINER_NAME% || echo Container not present
-                docker run -d -p 8080:8080 --name %CONTAINER_NAME% %IMAGE_NAME%
+                docker run -d -p --name %CONTAINER_NAME% %IMAGE_NAME%
                 '''
             }
         }
     }
 }
+
