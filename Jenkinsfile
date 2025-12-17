@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/Ronit-Anvekar/mvn_jenkins_docker_Integration.git'
+                git 'https://github.com/Ronit-Anvekar/jenkins_maven.git'
             }
         }
 
@@ -30,4 +30,5 @@ pipeline {
             }
         }
     }
+
 }
